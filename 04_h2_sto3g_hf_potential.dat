@@ -1,0 +1,24 @@
+#! STO-3G H2 Hartree-Fock Energy Point
+# see also: http://pubchemqc.riken.jp/cgi-bin/molecularquery.py?name=hydrogen
+
+molecule h2 {
+H            0.0   0.0   0.0
+H            0.0   0.0   1.4
+unit bohr
+symmetry c1
+}
+
+set {
+  basis STO-3G
+}
+
+en, wfn = energy('hf', return_wfn=True)
+
+Matrix_C = wfn.Ca()
+C = np.asarray(Matrix_C)
+nbf = wfn.nso()
+mints = psi4.core.MintsHelper(wfn.basisset())
+V = np.asarray(mints.ao_potential())
+for i in range(nbf):
+  for j in range(nbf):
+      print (i+1,j+1, V[i,j])
