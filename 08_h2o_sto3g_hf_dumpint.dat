@@ -1,0 +1,66 @@
+#! STO-3G H2O Hartree-Fock
+# GEOM: B3LYP/6-31G* taken from http://pubchemqc.riken.jp/cgi-bin/molecularquery.py?name=water
+
+molecule h2o {
+O           0.9784782017    0.0224130404    0.0994725951
+H           1.9459769733    0.0279738016    0.0505799279
+H           0.7023051046    0.1274709488   -0.8231103953
+symmetry c1
+}
+
+set {
+  basis STO-3G
+}
+
+en, wfn = energy('hf', return_wfn=True)
+
+nbf = wfn.nso() # of basis function
+Ca = wfn.Ca()   # get AO->MO matrix
+_Ca = np.asarray(Ca) # AO->MO matrix in numpy format
+
+mints = psi4.core.MintsHelper(wfn.basisset())
+
+#get ERI
+mo_ERI = np.asarray(mints.mo_transform(mints.ao_eri(), Ca, Ca, Ca, Ca))
+#get kinetic and n-e integral in AO format
+ao_T = np.asarray(mints.ao_kinetic())
+ao_V = np.asarray(mints.ao_potential())
+
+ao_Hcore = ao_T + ao_V
+#obtain Hcore in MO basis
+mo_Hcore = np.dot(np.dot(_Ca.T, ao_Hcore), _Ca)
+
+count=0
+for i in range(nbf):
+  for j in range(i,nbf):
+     if (math.fabs(mo_Hcore[i,j]) > 1.0e-6):
+       count = count+1
+
+print("1 electron integrals")
+print("%d" % count )
+for i in range(nbf):
+  for j in range(i,nbf):
+     if (math.fabs(mo_Hcore[i,j]) > 1.0e-6):
+          print ('%3d, %3d,  %+.16e' % (i+1,j+1, mo_Hcore[i,j]))
+
+
+count=0
+for i in range(nbf):
+  for j in range(i,nbf):
+    for k in range(nbf):
+      for l in range(k,nbf):
+        if ( (i*nbf+j) >= (k*nbf+j) ):
+          if (math.fabs(mo_ERI[i,j,k,l]) > 1.0e-6):
+            count = count+1
+
+print("2 electron integrals")
+print("%d" % count)
+for i in range(nbf):
+  for j in range(i,nbf):
+    for k in range(nbf):
+      for l in range(k,nbf):
+        if ( (i*nbf+j) >= (k*nbf+j) ):
+          if (math.fabs(mo_ERI[i,j,k,l]) > 1.0e-6):
+            print ('%3d, %3d, %3d, %3d,  %+.16e ' % (i+1,j+1,k+1,l+1, mo_ERI[i,j,k,l]) )
+
+
