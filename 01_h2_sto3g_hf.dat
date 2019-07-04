@@ -1,0 +1,14 @@
+#! STO-3G H2 Hartree-Fock Energy Point
+# see also: http://pubchemqc.riken.jp/cgi-bin/molecularquery.py?name=hydrogen
+
+molecule h2 {
+H            0.0   0.0   0.0
+H            0.0   0.0   1.4
+unit bohr
+}
+
+set {
+  basis STO-3G
+}
+
+thisenergy = energy('hf')
