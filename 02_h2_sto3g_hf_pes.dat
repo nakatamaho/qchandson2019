@@ -1,0 +1,20 @@
+#! STO-3G H2 Hartree-Fock Energy Point
+# see also: http://pubchemqc.riken.jp/cgi-bin/molecularquery.py?name=hydrogen
+
+molecule h2 {
+H            0.0   0.0   0.0
+H            0.0   0.0   R
+unit bohr
+}
+
+Rvals=[0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 2.0, 3.0, 4.0, 5.0, 6.0]
+
+set {
+  basis STO-3G
+}
+
+
+for R in Rvals:
+   h2.R = R
+   ene=energy('hf')
+   print (R, ene)
