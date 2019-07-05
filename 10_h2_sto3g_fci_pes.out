@@ -22,9 +22,9 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Friday, 05 July 2019 12:37PM
+    Psi4 started on: Friday, 05 July 2019 12:52PM
 
-    Process ID: 83777
+    Process ID: 84339
     Host:       comp0002
     PSIDATADIR: /usr/local/psi4/share/psi4
     Memory:     500.0 MiB
@@ -57,8 +57,7 @@ for R in Rvals:
    h2.R = R
    ene=energy('fci')
    print (R, ene)
-
---------------------------------------------------------------------------
+   --------------------------------------------------------------------------
 Molecule: geometry: Molecule is not complete, please use 'update_geometry'
                     once all variables are set.
 
@@ -69,7 +68,7 @@ Molecule: Setting a variable updates the molecular geometry, for
 Molecule: Setting geometry variable R to 0.500000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:49 2019
+*** at Fri Jul  5 12:52:48 2019
 
    => Loading Basis Set <=
 
@@ -215,10 +214,9 @@ Molecule: Setting geometry variable R to 0.500000
     Nuclear Repulsion Energy =              2.0000000000000000
     One-Electron Energy =                  -3.1600230618617613
     Two-Electron Energy =                   0.7566966202072833
-    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -0.4033264416544780
 
-    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
+
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -237,15 +235,15 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:50 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:48 2019
 Module time:
-	user time   =       0.26 seconds =       0.00 minutes
-	system time =       0.16 seconds =       0.00 minutes
-	total time  =          1 seconds =       0.02 minutes
+	user time   =       0.39 seconds =       0.01 minutes
+	system time =       0.44 seconds =       0.01 minutes
+	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       0.26 seconds =       0.00 minutes
-	system time =       0.16 seconds =       0.00 minutes
-	total time  =          1 seconds =       0.02 minutes
+	user time   =       0.39 seconds =       0.01 minutes
+	system time =       0.44 seconds =       0.01 minutes
+	total time  =          0 seconds =       0.00 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -372,7 +370,7 @@ Total time:
 Molecule: Setting geometry variable R to 0.600000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:50 2019
+*** at Fri Jul  5 12:52:48 2019
 
    => Loading Basis Set <=
 
@@ -515,10 +513,9 @@ Molecule: Setting geometry variable R to 0.600000
     Nuclear Repulsion Energy =              1.6666666666666667
     One-Electron Energy =                  -3.0844826491637320
     Two-Electron Energy =                   0.7495595713688439
-    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -0.6682564111282214
 
-    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
+
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -537,14 +534,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:50 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:49 2019
 Module time:
-	user time   =       0.30 seconds =       0.01 minutes
-	system time =       0.13 seconds =       0.00 minutes
-	total time  =          0 seconds =       0.00 minutes
+	user time   =       0.25 seconds =       0.00 minutes
+	system time =       0.03 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       0.79 seconds =       0.01 minutes
-	system time =       1.17 seconds =       0.02 minutes
+	user time   =       0.83 seconds =       0.01 minutes
+	system time =       1.22 seconds =       0.02 minutes
 	total time  =          1 seconds =       0.02 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -672,7 +669,7 @@ Total time:
 Molecule: Setting geometry variable R to 0.700000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:50 2019
+*** at Fri Jul  5 12:52:49 2019
 
    => Loading Basis Set <=
 
@@ -837,14 +834,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:50 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:49 2019
 Module time:
 	user time   =       0.23 seconds =       0.00 minutes
 	system time =       0.01 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       1.04 seconds =       0.02 minutes
-	system time =       1.19 seconds =       0.02 minutes
+	user time   =       1.08 seconds =       0.02 minutes
+	system time =       1.24 seconds =       0.02 minutes
 	total time  =          1 seconds =       0.02 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -972,7 +969,7 @@ Total time:
 Molecule: Setting geometry variable R to 0.800000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:50 2019
+*** at Fri Jul  5 12:52:49 2019
 
    => Loading Basis Set <=
 
@@ -1136,15 +1133,15 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:51 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:49 2019
 Module time:
 	user time   =       0.23 seconds =       0.00 minutes
-	system time =       0.00 seconds =       0.00 minutes
-	total time  =          1 seconds =       0.02 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       1.29 seconds =       0.02 minutes
-	system time =       1.20 seconds =       0.02 minutes
-	total time  =          2 seconds =       0.03 minutes
+	user time   =       1.32 seconds =       0.02 minutes
+	system time =       1.26 seconds =       0.02 minutes
+	total time  =          1 seconds =       0.02 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -1271,7 +1268,7 @@ Total time:
 Molecule: Setting geometry variable R to 0.900000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:51 2019
+*** at Fri Jul  5 12:52:49 2019
 
    => Loading Basis Set <=
 
@@ -1435,14 +1432,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:51 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:50 2019
 Module time:
-	user time   =       0.24 seconds =       0.00 minutes
-	system time =       0.00 seconds =       0.00 minutes
-	total time  =          0 seconds =       0.00 minutes
+	user time   =       0.23 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       1.55 seconds =       0.03 minutes
-	system time =       1.20 seconds =       0.02 minutes
+	user time   =       1.57 seconds =       0.03 minutes
+	system time =       1.27 seconds =       0.02 minutes
 	total time  =          2 seconds =       0.03 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -1570,7 +1567,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.000000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:51 2019
+*** at Fri Jul  5 12:52:50 2019
 
    => Loading Basis Set <=
 
@@ -1713,9 +1710,10 @@ Molecule: Setting geometry variable R to 1.000000
     Nuclear Repulsion Energy =              1.0000000000000000
     One-Electron Energy =                  -2.7804385411770203
     Two-Electron Energy =                   0.7144390790337164
+    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -1.0659994621433038
 
-
+    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -1734,14 +1732,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:51 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:50 2019
 Module time:
-	user time   =       0.22 seconds =       0.00 minutes
-	system time =       0.02 seconds =       0.00 minutes
+	user time   =       0.23 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       1.79 seconds =       0.03 minutes
-	system time =       1.22 seconds =       0.02 minutes
+	user time   =       1.82 seconds =       0.03 minutes
+	system time =       1.28 seconds =       0.02 minutes
 	total time  =          2 seconds =       0.03 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -1869,7 +1867,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.100000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:51 2019
+*** at Fri Jul  5 12:52:50 2019
 
    => Loading Basis Set <=
 
@@ -2033,14 +2031,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:51 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:50 2019
 Module time:
 	user time   =       0.23 seconds =       0.00 minutes
 	system time =       0.01 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       2.03 seconds =       0.03 minutes
-	system time =       1.24 seconds =       0.02 minutes
+	user time   =       2.07 seconds =       0.03 minutes
+	system time =       1.30 seconds =       0.02 minutes
 	total time  =          2 seconds =       0.03 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -2168,7 +2166,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.200000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:51 2019
+*** at Fri Jul  5 12:52:50 2019
 
    => Loading Basis Set <=
 
@@ -2311,9 +2309,10 @@ Molecule: Setting geometry variable R to 1.200000
     Nuclear Repulsion Energy =              0.8333333333333334
     One-Electron Energy =                  -2.6384104268390907
     Two-Electron Energy =                   0.6947432108255831
+    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -1.1103338826801741
 
-
+    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -2332,15 +2331,15 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:52 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:50 2019
 Module time:
-	user time   =       0.22 seconds =       0.00 minutes
+	user time   =       0.23 seconds =       0.00 minutes
 	system time =       0.00 seconds =       0.00 minutes
-	total time  =          1 seconds =       0.02 minutes
+	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       2.27 seconds =       0.04 minutes
-	system time =       1.24 seconds =       0.02 minutes
-	total time  =          3 seconds =       0.05 minutes
+	user time   =       2.32 seconds =       0.04 minutes
+	system time =       1.30 seconds =       0.02 minutes
+	total time  =          2 seconds =       0.03 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -2467,7 +2466,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.300000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:52 2019
+*** at Fri Jul  5 12:52:50 2019
 
    => Loading Basis Set <=
 
@@ -2610,9 +2609,10 @@ Molecule: Setting geometry variable R to 1.300000
     Nuclear Repulsion Energy =              0.7692307692307692
     One-Electron Energy =                  -2.5707927009125018
     Two-Electron Energy =                   0.6846907912309020
+    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -1.1168711404508307
 
-
+    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -2631,14 +2631,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:52 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:51 2019
 Module time:
-	user time   =       0.22 seconds =       0.00 minutes
+	user time   =       0.23 seconds =       0.00 minutes
 	system time =       0.00 seconds =       0.00 minutes
-	total time  =          0 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       2.52 seconds =       0.04 minutes
-	system time =       1.25 seconds =       0.02 minutes
+	user time   =       2.57 seconds =       0.04 minutes
+	system time =       1.31 seconds =       0.02 minutes
 	total time  =          3 seconds =       0.05 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -2766,7 +2766,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.400000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:52 2019
+*** at Fri Jul  5 12:52:51 2019
 
    => Loading Basis Set <=
 
@@ -2909,9 +2909,10 @@ Molecule: Setting geometry variable R to 1.400000
     Nuclear Repulsion Energy =              0.7142857142857143
     One-Electron Energy =                  -2.5055941236716519
     Two-Electron Energy =                   0.6745940843233676
+    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -1.1167143250625697
 
-
+    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -2930,14 +2931,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:52 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:51 2019
 Module time:
-	user time   =       0.29 seconds =       0.00 minutes
-	system time =       0.02 seconds =       0.00 minutes
+	user time   =       0.23 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       2.83 seconds =       0.05 minutes
-	system time =       1.28 seconds =       0.02 minutes
+	user time   =       2.82 seconds =       0.05 minutes
+	system time =       1.32 seconds =       0.02 minutes
 	total time  =          3 seconds =       0.05 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -3065,7 +3066,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.500000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:52 2019
+*** at Fri Jul  5 12:52:51 2019
 
    => Loading Basis Set <=
 
@@ -3208,9 +3209,10 @@ Molecule: Setting geometry variable R to 1.500000
     Nuclear Repulsion Energy =              0.6666666666666666
     One-Electron Energy =                  -2.4428764829334071
     Two-Electron Energy =                   0.6645139228980762
+    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -1.1116958933686645
 
-
+    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -3229,15 +3231,15 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:53 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:51 2019
 Module time:
-	user time   =       0.26 seconds =       0.00 minutes
-	system time =       0.01 seconds =       0.00 minutes
-	total time  =          1 seconds =       0.02 minutes
+	user time   =       0.23 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       3.11 seconds =       0.05 minutes
-	system time =       1.30 seconds =       0.02 minutes
-	total time  =          4 seconds =       0.07 minutes
+	user time   =       3.07 seconds =       0.05 minutes
+	system time =       1.33 seconds =       0.02 minutes
+	total time  =          3 seconds =       0.05 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -3364,7 +3366,7 @@ Total time:
 Molecule: Setting geometry variable R to 1.600000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:53 2019
+*** at Fri Jul  5 12:52:51 2019
 
    => Loading Basis Set <=
 
@@ -3528,15 +3530,15 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:53 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:51 2019
 Module time:
-	user time   =       0.22 seconds =       0.00 minutes
-	system time =       0.02 seconds =       0.00 minutes
+	user time   =       0.23 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       3.35 seconds =       0.06 minutes
-	system time =       1.32 seconds =       0.02 minutes
-	total time  =          4 seconds =       0.07 minutes
+	user time   =       3.31 seconds =       0.06 minutes
+	system time =       1.35 seconds =       0.02 minutes
+	total time  =          3 seconds =       0.05 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -3663,7 +3665,7 @@ Total time:
 Molecule: Setting geometry variable R to 2.000000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:53 2019
+*** at Fri Jul  5 12:52:51 2019
 
    => Loading Basis Set <=
 
@@ -3806,10 +3808,9 @@ Molecule: Setting geometry variable R to 2.000000
     Nuclear Repulsion Energy =              0.5000000000000000
     One-Electron Energy =                  -2.1653907362188276
     Two-Electron Energy =                   0.6162198342330123
-    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -1.0491709019858153
 
-    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
+
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -3828,14 +3829,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:53 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:52 2019
 Module time:
 	user time   =       0.24 seconds =       0.00 minutes
 	system time =       0.01 seconds =       0.00 minutes
-	total time  =          0 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       3.60 seconds =       0.06 minutes
-	system time =       1.33 seconds =       0.02 minutes
+	user time   =       3.56 seconds =       0.06 minutes
+	system time =       1.37 seconds =       0.02 minutes
 	total time  =          4 seconds =       0.07 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -3963,7 +3964,7 @@ Total time:
 Molecule: Setting geometry variable R to 3.000000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:53 2019
+*** at Fri Jul  5 12:52:52 2019
 
    => Loading Basis Set <=
 
@@ -4106,10 +4107,9 @@ Molecule: Setting geometry variable R to 3.000000
     Nuclear Repulsion Energy =              0.3333333333333333
     One-Electron Energy =                  -1.7617664438224192
     Two-Electron Energy =                   0.5431581103780310
-    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -0.8852750001110550
 
-    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
+
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -4128,14 +4128,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:53 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:52 2019
 Module time:
 	user time   =       0.23 seconds =       0.00 minutes
 	system time =       0.00 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       3.86 seconds =       0.06 minutes
-	system time =       1.34 seconds =       0.02 minutes
+	user time   =       3.81 seconds =       0.06 minutes
+	system time =       1.38 seconds =       0.02 minutes
 	total time  =          4 seconds =       0.07 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -4262,7 +4262,7 @@ Total time:
 Molecule: Setting geometry variable R to 4.000000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:53 2019
+*** at Fri Jul  5 12:52:52 2019
 
    => Loading Basis Set <=
 
@@ -4405,10 +4405,9 @@ Molecule: Setting geometry variable R to 4.000000
     Nuclear Repulsion Energy =              0.2500000000000000
     One-Electron Energy =                  -1.5136986885646690
     Two-Electron Energy =                   0.5026164415404429
-    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -0.7610822470242261
 
-    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
+
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -4427,15 +4426,15 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:54 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:52 2019
 Module time:
-	user time   =       0.23 seconds =       0.00 minutes
-	system time =       0.01 seconds =       0.00 minutes
-	total time  =          1 seconds =       0.02 minutes
+	user time   =       0.22 seconds =       0.00 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       4.11 seconds =       0.07 minutes
-	system time =       1.35 seconds =       0.02 minutes
-	total time  =          5 seconds =       0.08 minutes
+	user time   =       4.05 seconds =       0.07 minutes
+	system time =       1.40 seconds =       0.02 minutes
+	total time  =          4 seconds =       0.07 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -4561,7 +4560,7 @@ Total time:
 Molecule: Setting geometry variable R to 5.000000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:54 2019
+*** at Fri Jul  5 12:52:52 2019
 
    => Loading Basis Set <=
 
@@ -4704,10 +4703,9 @@ Molecule: Setting geometry variable R to 5.000000
     Nuclear Repulsion Energy =              0.2000000000000000
     One-Electron Energy =                  -1.3672626668640040
     Two-Electron Energy =                   0.4808467420218725
-    PCM Polarization Energy =               0.0000000000000000
     Total Energy =                         -0.6864159248421315
 
-    Alert: EFP and PCM quantities not currently incorporated into SCF psivars.
+
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
@@ -4726,14 +4724,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:54 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:53 2019
 Module time:
-	user time   =       0.23 seconds =       0.00 minutes
-	system time =       0.00 seconds =       0.00 minutes
-	total time  =          0 seconds =       0.00 minutes
+	user time   =       0.24 seconds =       0.00 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
 Total time:
-	user time   =       4.35 seconds =       0.07 minutes
-	system time =       1.36 seconds =       0.02 minutes
+	user time   =       4.31 seconds =       0.07 minutes
+	system time =       1.42 seconds =       0.02 minutes
 	total time  =          5 seconds =       0.08 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -4860,7 +4858,7 @@ Total time:
 Molecule: Setting geometry variable R to 6.000000
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:37:54 2019
+*** at Fri Jul  5 12:52:53 2019
 
    => Loading Basis Set <=
 
@@ -5024,14 +5022,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:37:54 2019
+*** tstop() called on comp0002 at Fri Jul  5 12:52:53 2019
 Module time:
 	user time   =       0.23 seconds =       0.00 minutes
-	system time =       0.01 seconds =       0.00 minutes
+	system time =       0.00 seconds =       0.00 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       4.59 seconds =       0.08 minutes
-	system time =       1.38 seconds =       0.02 minutes
+	user time   =       4.56 seconds =       0.08 minutes
+	system time =       1.44 seconds =       0.02 minutes
 	total time  =          5 seconds =       0.08 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -5156,7 +5154,7 @@ Total time:
 
 			 - Edward Valeev
 
-    Psi4 stopped on: Friday, 05 July 2019 12:37PM
-    Psi4 wall time for execution: 0:00:04.89
+    Psi4 stopped on: Friday, 05 July 2019 12:52PM
+    Psi4 wall time for execution: 0:00:04.78
 
 *** Psi4 exiting successfully. Buy a developer a beer!
