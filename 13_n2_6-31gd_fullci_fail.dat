@@ -1,0 +1,13 @@
+#! 6-31G* N2 FullCI
+# GEOM: B3LYP/6-31G* taken http://pubchemqc.riken.jp/cgi-bin/molecularquery.py?name=nitrogen
+
+molecule n2 {
+N          1.1054794856    0.0  0.0
+N          0.0             0.0  0.0
+}
+
+set {
+  basis 6-31g*
+}
+
+ene = energy('fci')
