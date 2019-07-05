@@ -1,0 +1,16 @@
+#! STO-3G H2O FullCI
+# GEOM: B3LYP/6-31G* taken from http://pubchemqc.riken.jp/cgi-bin/molecularquery.py?name=water
+
+molecule h2o {
+O           0.9784782017    0.0224130404    0.0994725951
+H           1.9459769733    0.0279738016    0.0505799279
+H           0.7023051046    0.1274709488   -0.8231103953
+}
+
+set {
+  basis STO-3G
+}
+
+ene = energy('fci')
+
+
