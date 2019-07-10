@@ -1,0 +1,35 @@
+0.500000 -102.952960 -103.057959
+0.600000 -105.933038 -106.057579
+0.700000 -107.495568 -107.643249
+0.800000 -108.295346 -108.465012
+0.900000 -108.679217 -108.870438
+1.000000 -108.835097 -109.048742
+1.100000 -108.867473 -109.105374
+1.200000 -108.835618 -109.100089
+1.300000 -108.773320 -109.066721
+1.400000 -108.316989 -109.023970
+1.500000 -108.327159 -108.981591
+1.600000 -108.330097 -108.944163
+2.000000 -108.162547 -108.861627
+3.000000 -108.219708 -108.839789
+4.000000 -108.211802 -108.839989
+5.000000 -108.200821 -108.839890
+6.000000 -108.192486 -108.839883
+Traceback (most recent call last):
+  File "/usr/local/psi4/bin/psi4", line 269, in <module>
+    exec(content)
+  File "<string>", line 32, in <module>
+  File "/usr/local/psi4/lib/psi4/driver/driver.py", line 492, in energy
+    wfn = procedures['energy'][lowername](lowername, molecule=molecule, **kwargs)
+  File "/usr/local/psi4/lib/psi4/driver/procrouting/proc.py", line 2009, in run_scf
+    scf_wfn = scf_helper(name, post_scf=False, **kwargs)
+  File "/usr/local/psi4/lib/psi4/driver/procrouting/proc.py", line 1363, in scf_helper
+    e_scf = scf_wfn.compute_energy()
+
+RuntimeError: 
+Fatal Error: Iterations did not converge.
+Error occurred in file: /home/maho/psi4/psi4/src/psi4/libpsi4util/process.cc on line: 112
+The most recent 5 function calls were:
+
+psi::PsiException::PsiException(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const*, int)
+
