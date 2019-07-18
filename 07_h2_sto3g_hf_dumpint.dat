@@ -3,7 +3,7 @@
 
 molecule h2 {
 H            0.0   0.0   0.0
-H            0.0   0.0   1.4001
+H            0.0   0.0   1.401
 unit bohr
 symmetry c1
 }
