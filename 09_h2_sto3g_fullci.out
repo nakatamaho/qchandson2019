@@ -1,9 +1,9 @@
 
     -----------------------------------------------------------------------
           Psi4: An Open-Source Ab Initio Electronic Structure Package
-                               Psi4 1.2.1 release
+                               Psi4 1.2 release
 
-                         Git: Rev {HEAD} 406f4de 
+                         Git: Rev {HEAD} 9d4a61c 
 
 
     R. M. Parrish, L. A. Burns, D. G. A. Smith, A. C. Simmonett,
@@ -22,9 +22,9 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Friday, 05 July 2019 12:59PM
+    Psi4 started on: Thursday, 18 July 2019 04:35PM
 
-    Process ID: 84550
+    Process ID: 86209
     Host:       comp0002
     PSIDATADIR: /usr/local/psi4/share/psi4
     Memory:     500.0 MiB
@@ -38,7 +38,7 @@
 
 molecule h2 {
 H            0.0   0.0   0.0
-H            0.0   0.0   1.4
+H            0.0   0.0   1.401
 unit bohr
 }
 
@@ -50,7 +50,7 @@ thisenergy = energy('fci')
 --------------------------------------------------------------------------
 
 *** tstart() called on comp0002
-*** at Fri Jul  5 12:59:45 2019
+*** at Thu Jul 18 16:35:19 2019
 
    => Loading Basis Set <=
 
@@ -80,14 +80,14 @@ thisenergy = energy('fci')
 
        Center              X                  Y                   Z               Mass       
     ------------   -----------------  -----------------  -----------------  -----------------
-         H            0.000000000000     0.000000000000    -0.700000000000     1.007825032070
-         H            0.000000000000     0.000000000000     0.700000000000     1.007825032070
+         H            0.000000000000     0.000000000000    -0.700500000000     1.007825032070
+         H            0.000000000000     0.000000000000     0.700500000000     1.007825032070
 
   Running in d2h symmetry.
 
-  Rotational constants: A = ************  B =     60.95131  C =     60.95131 [cm^-1]
-  Rotational constants: A = ************  B = 1827274.17847  C = 1827274.17847 [MHz]
-  Nuclear repulsion =    0.714285714285714
+  Rotational constants: A = ************  B =     60.86433  C =     60.86433 [cm^-1]
+  Rotational constants: A = ************  B = 1824666.58097  C = 1824666.58097 [MHz]
+  Nuclear repulsion =    0.713775874375446
 
   Charge       = 0
   Multiplicity = 1
@@ -161,7 +161,7 @@ thisenergy = energy('fci')
 
     OpenMP threads:              1
 
-  Minimum eigenvalue in the overlap matrix is 3.4068179387E-01.
+  Minimum eigenvalue in the overlap matrix is 3.4102801064E-01.
   Using Symmetric Orthogonalization.
 
   SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF.
@@ -170,9 +170,9 @@ thisenergy = energy('fci')
 
                         Total Energy        Delta E     RMS |[F,P]|
 
-   @RHF iter   0:    -0.71806767610273   -7.18068e-01   0.00000e+00 
-   @RHF iter   1:    -1.11671432506257   -3.98647e-01   0.00000e+00 
-   @RHF iter   2:    -1.11671432506257    0.00000e+00   0.00000e+00 DIIS
+   @RHF iter   0:    -0.71791505531155   -7.17915e-01   0.00000e+00 
+   @RHF iter   1:    -1.11668563026286   -3.98771e-01   0.00000e+00 
+   @RHF iter   2:    -1.11668563026286    0.00000e+00   0.00000e+00 DIIS
 
   ==> Post-Iterations <==
 
@@ -181,11 +181,11 @@ thisenergy = energy('fci')
 
     Doubly Occupied:                                                      
 
-       1Ag    -0.578203  
+       1Ag    -0.577984  
 
     Virtual:                                                              
 
-       1B1u    0.670268  
+       1B1u    0.669722  
 
     Final Occupation by Irrep:
              Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
@@ -193,14 +193,14 @@ thisenergy = energy('fci')
 
   Energy converged.
 
-  @RHF Final Energy:    -1.11671432506257
+  @RHF Final Energy:    -1.11668563026286
 
    => Energetics <=
 
-    Nuclear Repulsion Energy =              0.7142857142857142
-    One-Electron Energy =                  -2.5055941236716524
-    Two-Electron Energy =                   0.6745940843233684
-    Total Energy =                         -1.1167143250625697
+    Nuclear Repulsion Energy =              0.7137758743754461
+    One-Electron Energy =                  -2.5049546079643092
+    Two-Electron Energy =                   0.6744931033260061
+    Total Energy =                         -1.1166856302628569
 
 
 
@@ -221,14 +221,14 @@ Properties computed using the SCF density matrix
      X:     0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000
 
 
-*** tstop() called on comp0002 at Fri Jul  5 12:59:45 2019
+*** tstop() called on comp0002 at Thu Jul 18 16:35:19 2019
 Module time:
-	user time   =       0.31 seconds =       0.01 minutes
-	system time =       0.14 seconds =       0.00 minutes
+	user time   =       0.36 seconds =       0.01 minutes
+	system time =       0.35 seconds =       0.01 minutes
 	total time  =          0 seconds =       0.00 minutes
 Total time:
-	user time   =       0.31 seconds =       0.01 minutes
-	system time =       0.14 seconds =       0.00 minutes
+	user time   =       0.36 seconds =       0.01 minutes
+	system time =       0.35 seconds =       0.01 minutes
 	total time  =          0 seconds =       0.00 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -320,31 +320,31 @@ Total time:
 
    ==> Starting CI iterations <==
 
-    H0 Block Eigenvalue =  -1.11671433
+    H0 Block Eigenvalue =  -1.11668563
 
     Simultaneous Expansion Method (Block Davidson Method)
     Using 1 initial trial vectors
 
      Iter   Root       Total Energy       Delta E      C RMS
 
-   @CI  0:     0     -1.116714325063   -1.8310E+00   1.8126E-01  
-   @CI  1:     0     -1.137275943617   -2.0562E-02   2.3747E-16  
+   @CI  0:     0     -1.116685630263   -1.8305E+00   1.8129E-01  
+   @CI  1:     0     -1.137270422065   -2.0585E-02   1.5613E-16  
     Warning: Norm of correction (root 0) is < 1.0E-13
-   @CI  2:     0     -1.137275943617   0.0000E+00   2.3747E-16 c
+   @CI  2:     0     -1.137270422065   0.0000E+00   1.5613E-16 c
 
    ==> Energetics <==
 
-    SCF energy =           -1.116714325062570
-    Total CI energy =      -1.137275943617065
+    SCF energy =           -1.116685630262857
+    Total CI energy =      -1.137270422065305
 
    ==> FCI root 0 information <==
 
-    FCI Root 0 energy =    -1.137275943617065
+    FCI Root 0 energy =    -1.137270422065305
 
    The 2 most important determinants:
 
-    *   1   -0.993627  (    0,    0)  1AgX 
-    *   2    0.112716  (    1,    1)  1B1uX 
+    *   1   -0.993615  (    0,    0)  1AgX 
+    *   2    0.112823  (    1,    1)  1B1uX 
 
 		 "A good bug is a dead bug" 
 
@@ -354,7 +354,7 @@ Total time:
 
 			 - Edward Valeev
 
-    Psi4 stopped on: Friday, 05 July 2019 12:59PM
-    Psi4 wall time for execution: 0:00:00.33
+    Psi4 stopped on: Thursday, 18 July 2019 04:35PM
+    Psi4 wall time for execution: 0:00:00.30
 
 *** Psi4 exiting successfully. Buy a developer a beer!
